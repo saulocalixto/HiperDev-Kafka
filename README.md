@@ -27,7 +27,7 @@ Pronto, o Kafka já está rodando.
 O MongoDb é usado no projeto _Ms-HistoricoClientes_ e guarda todo histórico de alteração de um cliente, desde seu registro até sua exclusão.
 Para instalar o MongoDb em seu ambiente basta rodar o comando abaixo:
 
-`docker run --name nginx -p 27017:27017 mongo`
+`docker run -p 27017:27017 mongo`
 
 Ele irá rodar um container com o mongodb na porta _27017_ do host, a mesma configurada no _Ms-HistoricoClientes_, caso precise rodar em outra porta basta trocar a porta do _appsettings.json_ do projeto.
 
