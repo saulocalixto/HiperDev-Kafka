@@ -14,9 +14,13 @@ Consumidor simples que lê o tópico de registros de clientes, enviando um e-mai
 
 ### Apache Kafka
 Para instalar o Apache Kafka basta entrar na pasta onde é guardado o arquivo de configuração do container
+
 `cd .\DockerCompose\Kafka`
+
 Posteriormente rodar o comando:
+
 `docker-compose up -d` 
+
 Pronto, o Kafka já está rodando.
 
 ### MongoDb
@@ -24,6 +28,7 @@ O MongoDb é usado no projeto _Ms-HistoricoClientes_ e guarda todo histórico de
 Para instalar o MongoDb em seu ambiente basta rodar o comando abaixo:
 
 `docker run --name nginx -p 27017:27017 mongo`
+
 Ele irá rodar um container com o mongodb na porta _27017_ do host, a mesma configurada no _Ms-HistoricoClientes_, caso precise rodar em outra porta basta trocar a porta do _appsettings.json_ do projeto.
 
 ## Informações gerais
